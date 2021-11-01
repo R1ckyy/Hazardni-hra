@@ -11,11 +11,16 @@ footer{
     border-radius: 15px;
     border: white 2px solid;
 }
-.button{
+.text-custom1{
+    color:#ffaa00;
+}
+#button{
     border: #ffaa00 3px solid;
     border-radius: 50px;
     box-shadow: 0px 10px #a16b00;
+    transition: all 1s;
 }
-.text-custom1{
-    color:#ffaa00;
+#button.animatepress{
+    transform: translateY(9px);
+    box-shadow: none;
 }
