@@ -7,3 +7,15 @@ header{
 footer{
     background-color: #1B262C;
 }
+.roll{
+    border-radius: 15px;
+    border: white 2px solid;
+}
+.button{
+    border: #ffaa00 3px solid;
+    border-radius: 50px;
+    box-shadow: 0px 10px #a16b00;
+}
+.text-custom1{
+    color:#ffaa00;
+}
