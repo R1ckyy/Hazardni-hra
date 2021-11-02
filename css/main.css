@@ -19,6 +19,7 @@ footer{
     border-radius: 50px;
     box-shadow: 0px 10px #a16b00;
     transition: all 1s;
+    cursor: pointer;
 }
 #button.animatepress{
     transform: translateY(9px);
