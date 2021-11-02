@@ -9,23 +9,23 @@ let vvyhry = 0;
 
 //-------------AUDIO-----------
 var presss = new Audio();
-presss.src ='../sound/button_press.mp3';
+presss.src ='sound/button_press.mp3';
 var rolls = new Audio();
-rolls.src = '../sound/spinning.mp3';
+rolls.src = 'sound/spinning.mp3';
 var roll1 = new Audio();
-roll1.src = '../sound/stop1.mp3';
+roll1.src = 'sound/stop1.mp3';
 var roll2 = new Audio();
-roll2.src = '../sound/stop2.mp3';
+roll2.src = 'sound/stop2.mp3';
 var roll3 = new Audio();
-roll3.src = '../sound/stop3.mp3';
+roll3.src = 'sound/stop3.mp3';
 var jackpot = new Audio();
-jackpot.src = '../sound/jackpot_sound.mp3';
+jackpot.src = 'sound/jackpot_sound.mp3';
 var bigwin = new Audio();
-bigwin.src = '../sound/payout_big.mp3';
+bigwin.src = 'sound/payout_big.mp3';
 var win = new Audio();
-win.src = '../sound/payout.mp3';
+win.src = 'sound/payout.mp3';
 var buzzer = new Audio();
-buzzer.src = '../sound/buzzer.mp3';
+buzzer.src = 'sound/buzzer.mp3';
 //-------------------------------
 
 const tlacitko = document.getElementById('button');
@@ -97,17 +97,17 @@ tlacitko.addEventListener("click",function(){
 // Math.ceil(Math.random()*7) 
 function rollone() {
     k1 = Math.ceil(Math.random()*7) 
-    obr1.src = `../kostky/kostka${k1}.png`;
+    obr1.src = `kostky/kostka${k1}.png`;
 }
 
 function rolltwo() {
     k2 = Math.ceil(Math.random()*7) 
-    obr2.src = `../kostky/kostka${k2}.png`;
+    obr2.src = `kostky/kostka${k2}.png`;
 }
 
 function rollthree() {
     k3 = Math.ceil(Math.random()*7) 
-    obr3.src = `../kostky/kostka${k3}.png`;
+    obr3.src = `kostky/kostka${k3}.png`;
 }
 
 function refreshstats() {
