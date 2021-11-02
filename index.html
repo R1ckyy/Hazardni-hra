@@ -1,26 +1,22 @@
 <!doctype html>
 <html lang="cs">
   <head>
-    <title>Hazard</title>
+    <title>Godomat</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
       <header>
-        <h1 class="bg text-white p-2 text-center container-fluid">Hazardní Hra</h1>
+        <h1 class="bg text-white p-2 text-center container-fluid">GODOMAT</h1>
       </header>
       <main class="container-fluid">
-        <div class="m-5"></div>
-        <div class="automat container-fluid p-2 text-center">
+        <div id="spaceru" class="m-3"></div>
+        <div class="automat p-2 text-center">
           <img id="k1" class="roll img-fluid p-1" src="./kostky/noroll.png" alt="Roll">
           <img id="k2" class="roll img-fluid p-1" src="./kostky/noroll.png" alt="Roll">
           <img id="k3" class="roll img-fluid p-1" src="./kostky/noroll.png" alt="Roll">
-        </div>
-        <div class="m-5"></div>
-        <div class="statistiky">
-
         </div>
         <div class="m-5"></div>
         <div class="m-5">
@@ -28,11 +24,34 @@
             <p id="buttontext" class="text-center display-4 p-2 text-custom1">ROLL</p>
           </div>
         </div>
+        <div id="spacerd" class="m-3"></div>
+        <div class="row">
+          <div class="col-lg-1 col-sm-0"></div>
+          <div class="col-lg-3 col-sm-12">
+            <h3 class="text-center text-white">Statistiky</h3>
+            <div id="statistiky" class="text-white text-center">
+              <p class="coins">Godocoins: 50</p>
+              <p>Počet pokusů: 0</p>
+              <p>Malých výher: 0</p>
+              <p>Velkých výher: 0</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-0"></div>
+          <div class="col-lg-3 col-sm-12">
+            <h3 class="text-center text-white">Výhry</h3>
+            <ul class="text-white">
+                <li>2 stejné = +3 Godocoiny</li>
+                <li>3 stejné = +10 Godocoinů</li>
+                <li>3 GODO = JACKPOT</li>
+            </ul>
+          </div>
+          <div class="col-lg-1 col-sm-0"></div>
+        </div>
       </main>
       <footer class="fixed-bottom">
-        <p class="text-white p-2 text-center">&copy Erik Graf 2021, SŠPU Opava</p>
+        <p class="text-white p-2 text-center">&copy Erik Graf 2021, IT2</p>
       </footer> 
-    <script src="js/main.js"></script>
+    <script src="js/slotmachine.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

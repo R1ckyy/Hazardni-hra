@@ -22,5 +22,480 @@ footer{
 }
 #button.animatepress{
     transform: translateY(9px);
-    box-shadow: none;
+    box-shadow: none !important;
 }
+#spaceru{
+    border-bottom: 10px #2b3c45 solid;
+}
+#spacerd{
+    border-top: 10px #2b3c45 solid;
+}
+.rainbow {
+    animation: drugs 2s infinite ;
+}
+.rainbow2 {
+    animation: drugsshadow 2s infinite;
+}
+@keyframes drugs {
+    0% {
+      color: #e87d7d;
+      border-color: #e87d7d;
+    }
+    2% {
+      color: #e88a7d;
+      border-color: #e88a7d;
+    }
+    4% {
+      color: #e8977d;
+      border-color: #e8977d;
+    }
+    6% {
+      color: #e8a47d;
+      border-color: #e8a47d;
+    }
+    8% {
+      color: #e8b07d;
+      border-color: #e8b07d;
+    }
+    10% {
+      color: #e8bd7d;
+      border-color: #e8bd7d;
+    }
+    12% {
+      color: #e8ca7d;
+      border-color: #e8ca7d;
+    }
+    14% {
+      color: #e8d77d;
+      border-color: #e8d77d;
+    }
+    16% {
+      color: #e8e47d;
+      border-color: #e8e47d;
+    }
+    18% {
+      color: #dfe87d;
+      border-color: #dfe87d;
+    }
+    20% {
+      color: #d3e87d;
+      border-color: #d3e87d;
+    }
+    22% {
+      color: #c6e87d;
+      border-color: #c6e87d;
+    }
+    24% {
+      color: #b9e87d;
+      border-color: #b9e87d;
+    }
+    26% {
+      color: #ace87d;
+      border-color: #ace87d;
+    }
+    28% {
+      color: #9fe87d;
+      border-color: #9fe87d;
+    }
+    30% {
+      color: #92e87d;
+      border-color: #92e87d;
+    }
+    32% {
+      color: #86e87d;
+      border-color: #86e87d;
+    }
+    34% {
+      color: #7de881;
+      border-color: #7de881;
+    }
+    36% {
+      color: #7de88e;
+      border-color: #7de88e;
+    }
+    38% {
+      color: #7de89b;
+      border-color: #7de89b;
+    }
+    40% {
+      color: #7de8a8;
+      border-color: #7de8a8;
+    }
+    42% {
+      color: #7de8b5;
+      border-color: #7de8b5;
+    }
+    44% {
+      color: #7de8c1;
+      border-color: #7de8c1;
+    }
+    46% {
+      color: #7de8ce;
+      border-color: #7de8ce;
+    }
+    48% {
+      color: #7de8db;
+      border-color: #7de8db;
+    }
+    50% {
+      color: #7de8e8;
+      border-color: #7de8e8;
+    }
+    52% {
+      color: #7ddbe8;
+      border-color: #7ddbe8;
+    }
+    54% {
+      color: #7dcee8;
+      border-color: #7dcee8;
+    }
+    56% {
+      color: #7dc1e8;
+      border-color: #7dc1e8;
+    }
+    58% {
+      color: #7db5e8;
+      border-color: #7db5e8;
+    }
+    60% {
+      color: #7da8e8;
+      border-color: #7da8e8;
+    }
+    62% {
+      color: #7d9be8;
+      border-color: #7d9be8;
+    }
+    64% {
+      color: #7d8ee8;
+      border-color: #7d8ee8;
+    }
+    66% {
+      color: #7d81e8;
+      border-color: #7d81e8;
+    }
+    68% {
+      color: #867de8;
+      border-color: #867de8;
+    }
+    70% {
+      color: #927de8;
+      border-color: #927de8;
+    }
+    72% {
+      color: #9f7de8;
+      border-color: #9f7de8;
+    }
+    74% {
+      color: #ac7de8;
+      border-color: #ac7de8;
+    }
+    76% {
+      color: #b97de8;
+      border-color: #b97de8;
+    }
+    78% {
+      color: #c67de8;
+      border-color: #c67de8;
+    }
+    80% {
+      color: #d37de8;
+      border-color: #d37de8;
+    }
+    82% {
+      color: #df7de8;
+      border-color: #df7de8;
+    }
+    84% {
+      color: #e87de4;
+      border-color: #e87de4;
+    }
+    86% {
+      color: #e87dd7;
+      border-color: #e87dd7;
+    }
+    88% {
+      color: #e87dca;
+      border-color: #e87dca;
+    }
+    90% {
+      color: #e87dbd;
+      border-color: #e87dbd;
+    }
+    92% {
+      color: #e87db0;
+      border-color: #e87db0;
+    }
+    94% {
+      color: #e87da4;
+      border-color: #e87da4;
+    }
+    96% {
+      color: #e87d97;
+      border-color: #e87d97;
+    }
+    98% {
+      color: #e87d8a;
+      border-color: #e87d8a;
+    }
+    100% {
+      color: #e87d7d;
+      border-color: #e87d7d;
+    }
+  }
+  @keyframes drugsshadow {
+    0% {
+      box-shadow: 0px 10px #e87d7d;
+      color: #e87d7d;
+      border-color: #e87d7d;
+    }
+    2% {
+      box-shadow: 0px 10px #e88a7d;
+      color: #e88a7d;
+      border-color: #e88a7d;
+    }
+    4% {
+      box-shadow: 0px 10px #e8977d;
+      color: #e8977d;
+      border-color: #e8977d;
+    }
+    6% {
+      box-shadow: 0px 10px #e8a47d;
+      color: #e8a47d;
+      border-color: #e8a47d;
+    }
+    8% {
+      box-shadow: 0px 10px #e8b07d;
+      color: #e8b07d;
+      border-color: #e8b07d;
+    }
+    10% {
+      box-shadow: 0px 10px #e8bd7d;
+      color: #e8bd7d;
+      border-color: #e8bd7d;
+    }
+    12% {
+      box-shadow: 0px 10px #e8ca7d;
+      color: #e8ca7d;
+      border-color: #e8ca7d;
+    }
+    14% {
+      box-shadow: 0px 10px #e8d77d;
+      color: #e8d77d;
+      border-color: #e8d77d;
+    }
+    16% {
+      box-shadow: 0px 10px #e8e47d;
+      color: #e8e47d;
+      border-color: #e8e47d;
+    }
+    18% {
+      box-shadow: 0px 10px #dfe87d;
+      color: #dfe87d;
+      border-color: #dfe87d;
+    }
+    20% {
+      box-shadow: 0px 10px #d3e87d;
+      color: #d3e87d;
+      border-color: #d3e87d;
+    }
+    22% {
+      box-shadow: 0px 10px #c6e87d;
+      color: #c6e87d;
+      border-color: #c6e87d;
+    }
+    24% {
+      box-shadow: 0px 10px #b9e87d;
+      color: #b9e87d;
+      border-color: #b9e87d;
+    }
+    26% {
+      box-shadow: 0px 10px #ace87d;
+      color: #ace87d;
+      border-color: #ace87d;
+    }
+    28% {
+      box-shadow: 0px 10px #9fe87d;
+      color: #9fe87d;
+      border-color: #9fe87d;
+    }
+    30% {
+      box-shadow: 0px 10px #92e87d;
+      color: #92e87d;
+      border-color: #92e87d;
+    }
+    32% {
+      box-shadow: 0px 10px #86e87d;
+      color: #86e87d;
+      border-color: #86e87d;
+    }
+    34% {
+      box-shadow: 0px 10px #7de881;
+      color: #7de881;
+      border-color: #7de881;
+    }
+    36% {
+      box-shadow: 0px 10px #7de88e;
+      color: #7de88e;
+      border-color: #7de88e;
+    }
+    38% {
+      box-shadow: 0px 10px #7de89b;
+      color: #7de89b;
+      border-color: #7de89b;
+    }
+    40% {
+      box-shadow: 0px 10px #7de8a8;
+      color: #7de8a8;
+      border-color: #7de8a8;
+    }
+    42% {
+      box-shadow: 0px 10px #7de8b5;
+      color: #7de8b5;
+      border-color: #7de8b5;
+    }
+    44% {
+      box-shadow: 0px 10px #7de8c1;
+      color: #7de8c1;
+      border-color: #7de8c1;
+    }
+    46% {
+      box-shadow: 0px 10px #7de8ce;
+      color: #7de8ce;
+      border-color: #7de8ce;
+    }
+    48% {
+      box-shadow: 0px 10px #7de8db;
+      color: #7de8db;
+      border-color: #7de8db;
+    }
+    50% {
+      box-shadow: 0px 10px #7de8e8;
+      color: #7de8e8;
+      border-color: #7de8e8;
+    }
+    52% {
+      box-shadow: 0px 10px #7ddbe8;
+      color: #7ddbe8;
+      border-color: #7ddbe8;
+    }
+    54% {
+      box-shadow: 0px 10px #7dcee8;
+      color: #7dcee8;
+      border-color: #7dcee8;
+    }
+    56% {
+      box-shadow: 0px 10px #7dc1e8;
+      color: #7dc1e8;
+      border-color: #7dc1e8;
+    }
+    58% {
+      box-shadow: 0px 10px #7db5e8;
+      color: #7db5e8;
+      border-color: #7db5e8;
+    }
+    60% {
+      box-shadow: 0px 10px #7da8e8;
+      color: #7da8e8;
+      border-color: #7da8e8;
+    }
+    62% {
+      box-shadow: 0px 10px #7d9be8;
+      color: #7d9be8;
+      border-color: #7d9be8;
+    }
+    64% {
+      box-shadow: 0px 10px #7d8ee8;
+      color: #7d8ee8;
+      border-color: #7d8ee8;
+    }
+    66% {
+      box-shadow: 0px 10px #7d81e8;
+      color: #7d81e8;
+      border-color: #7d81e8;
+    }
+    68% {
+      box-shadow: 0px 10px #867de8;
+      color: #867de8;
+      border-color: #867de8;
+    }
+    70% {
+      box-shadow: 0px 10px #927de8;
+      color: #927de8;
+      border-color: #927de8;
+    }
+    72% {
+      box-shadow: 0px 10px #9f7de8;
+      color: #9f7de8;
+      border-color: #9f7de8;
+    }
+    74% {
+      box-shadow: 0px 10px #ac7de8;
+      color: #ac7de8;
+      border-color: #ac7de8;
+    }
+    76% {
+      box-shadow: 0px 10px #b97de8;
+      color: #b97de8;
+      border-color: #b97de8;
+    }
+    78% {
+      box-shadow: 0px 10px #c67de8;
+      color: #c67de8;
+      border-color: #c67de8;
+    }
+    80% {
+      box-shadow: 0px 10px #d37de8;
+      color: #d37de8;
+      border-color: #d37de8;
+    }
+    82% {
+      box-shadow: 0px 10px #df7de8;
+      color: #df7de8;
+      border-color: #df7de8;
+    }
+    84% {
+      box-shadow: 0px 10px #e87de4;
+      color: #e87de4;
+      border-color: #e87de4;
+    }
+    86% {
+      box-shadow: 0px 10px #e87dd7;
+      color: #e87dd7;
+      border-color: #e87dd7;
+    }
+    88% {
+      box-shadow: 0px 10px #e87dca;
+      color: #e87dca;
+      border-color: #e87dca;
+    }
+    90% {
+      box-shadow: 0px 10px #e87dbd;
+      color: #e87dbd;
+      border-color: #e87dbd;
+    }
+    92% {
+      box-shadow: 0px 10px #e87db0;
+      color: #e87db0;
+      border-color: #e87db0;
+    }
+    94% {
+      box-shadow: 0px 10px #e87da4;
+      color: #e87da4;
+      border-color: #e87da4;
+    }
+    96% {
+      box-shadow: 0px 10px #e87d97;
+      color: #e87d97;
+      border-color: #e87d97;
+    }
+    98% {
+      box-shadow: 0px 10px #e87d8a;
+      color: #e87d8a;
+      border-color: #e87d8a;
+    }
+    100% {
+      box-shadow: 0px 10px #e87d7d;
+      color: #e87d7d;
+      border-color: #e87d7d;
+    }
+  }
