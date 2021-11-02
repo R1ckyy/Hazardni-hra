@@ -96,17 +96,17 @@ tlacitko.addEventListener("click",function(){
 
 // Math.ceil(Math.random()*7) 
 function rollone() {
-    k1 = Math.ceil(Math.random()*7) 
+    k1 = Math.ceil(Math.random()*7)
     obr1.src = `./kostky/kostka${k1}.png`;
 }
 
 function rolltwo() {
-    k2 = Math.ceil(Math.random()*7) 
+    k2 = Math.ceil(Math.random()*7)
     obr2.src = `./kostky/kostka${k2}.png`;
 }
 
 function rollthree() {
-    k3 = Math.ceil(Math.random()*7) 
+    k3 = Math.ceil(Math.random()*7)
     obr3.src = `./kostky/kostka${k3}.png`;
 }
 
