@@ -1,5 +1,6 @@
 let rolling = 0;
-var bigwinflash
+var jwin = 0;
+var bigwinflash;
 let gcoins = 30;
 let pokusy = 0;
 let mvyhry = 0;
@@ -23,6 +24,8 @@ var bigwin = new Audio();
 bigwin.src = '../sound/payout_big.mp3';
 var win = new Audio();
 win.src = '../sound/payout.mp3';
+var buzzer = new Audio();
+buzzer.src = '../sound/buzzer.mp3';
 //-------------------------------
 
 const tlacitko = document.getElementById('button');
@@ -38,6 +41,19 @@ const obr3 = document.getElementById("k3");
 
 tlacitko.addEventListener("click",function(){
     if(rolling != 0 || gcoins == 0) return;
+    if(jwin == 1){
+        jackpot.pause();
+        jackpot.currentTime = 0;
+        tlacitkotext.classList.remove('rainbow');
+        tlacitko.classList.remove('rainbow2');
+        spaceru.classList.remove('rainbow');
+        spacerd.classList.remove('rainbow');
+        nadpis.classList.remove('rainbow');
+        obr1.classList.remove('rainbow');
+        obr2.classList.remove('rainbow');
+        obr3.classList.remove('rainbow');
+        statistiky.classList.remove('rainbow');  
+    }
     gcoins--;
     pokusy++;
     refreshstats()
@@ -103,6 +119,13 @@ function refreshstats() {
 
 function reset() {
     rolling = 0
+    if(gcoins == 0){
+        buzzer.play();
+        tlacitko.style.borderColor = '#ff0000';
+        tlacitko.style.boxShadow = ' 0px 10px #850000';
+        tlacitkotext.innerHTML = 'NO COINS :(';
+        tlacitkotext.style.color = '#ff0000';
+    }
 }
 function resetj() {
     rolling = 0
@@ -129,6 +152,7 @@ function rainbow() {
 function kontrolaVyhry() {
     if(k1 == 7 && k2 == 7 && k3 == 7 ){
         jackpot.play();
+        jwin = 1;
         tlacitko.classList.remove('animatepress');
         tlacitkotext.innerHTML = 'JACKPOT';
         tlacitkotext.style.color = '#ff0000';
@@ -144,7 +168,7 @@ function kontrolaVyhry() {
     }
     else if(k1 == k2 && k1 == k3){
         bigwin.play();
-        gcoins += 10;
+        gcoins += 5;
         vvyhry++;
         refreshstats()
         setTimeout(reset, 1000)
@@ -189,7 +213,7 @@ function kontrolaVyhry() {
     else if(k1 == k2 || k2 == k3 || k3 == k1){
         win.play();
         mvyhry++;
-        gcoins += 3;
+        gcoins += 2;
         refreshstats()
         setTimeout(reset, 1000)
         spacerd.style.borderColor = '#03fcf4';
