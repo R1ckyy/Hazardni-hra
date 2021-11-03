@@ -87,6 +87,7 @@ document.onkeydown = function (e) {
 function cheater() {
     if(rolling) return;
     alarm.play();
+    rolling = 1;
     tlacitkotext.innerHTML = 'Cheater';
     tlacitkotext.classList.add('alarm');
     tlacitko.classList.add('alarm2');
