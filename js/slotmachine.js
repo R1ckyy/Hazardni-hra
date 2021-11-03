@@ -12,6 +12,8 @@ var presss = new Audio();
 presss.src ='./sound/button_press.mp3';
 var rolls = new Audio();
 rolls.src = './sound/spinning.mp3';
+var alarm = new Audio();
+alarm.src = './sound/alarm.mp3'
 var roll1 = new Audio();
 roll1.src = './sound/stop1.mp3';
 var roll2 = new Audio();
@@ -40,6 +42,68 @@ const obr3 = document.getElementById("k3");
 
 
 tlacitko.addEventListener("click",function(){
+    startroll()
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+document.onkeydown = function (e) {
+
+    // disable F12 key
+    if(e.keyCode == 123) {
+        cheater()
+        return false;
+        
+    }
+
+    // disable I key
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+        cheater()
+        return false;
+    }
+
+    // disable J key
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        cheater()
+        return false;
+    }
+
+    // disable U key
+    if(e.ctrlKey && e.keyCode == 85) {
+        cheater()
+        return false;
+    }
+
+    if(e.ctrlKey && e.keyCode == 67) {
+        cheater()
+        return false;
+    }
+
+    if(e.keyCode == 32){
+        startroll()
+    }
+}
+
+function cheater() {
+    if(rolling) return;
+    alarm.play();
+    tlacitkotext.innerHTML = 'Cheater';
+    tlacitkotext.classList.add('alarm');
+    tlacitko.classList.add('alarm2');
+    spaceru.classList.add('alarm');
+    spacerd.classList.add('alarm');
+    nadpis.classList.add('alarm');
+    obr1.classList.add('alarm');
+    obr2.classList.add('alarm');
+    obr3.classList.add('alarm');
+    gcoins = '<b>Podvádění</b>';
+    pokusy = '<b>kazí</b>';
+    mvyhry = '<b>tuto</b>';
+    vvyhry = '<b>hru</b>';
+    refreshstats();
+}
+
+function startroll() {
     if(rolling != 0 || gcoins == 0) return;
     if(jwin == 1){
         jackpot.pause();
@@ -52,16 +116,15 @@ tlacitko.addEventListener("click",function(){
         obr1.classList.remove('rainbow');
         obr2.classList.remove('rainbow');
         obr3.classList.remove('rainbow');
-        statistiky.classList.remove('rainbow');  
     }
     gcoins--;
     pokusy++;
     refreshstats()
     rolling = 1;
     clearInterval(bigwinflash)
-    this.style.borderColor = 'gray';
-    this.style.boxShadow = ' 0px 10px #333333';
-    this.classList.add('animatepress');
+    tlacitko.style.borderColor = 'gray';
+    tlacitko.style.boxShadow = ' 0px 10px #333333';
+    tlacitko.classList.add('animatepress');
     tlacitkotext.innerHTML = 'Rolling';
     tlacitkotext.style.color = '#333333';
     spacerd.style.borderColor = '#2b3c45';
@@ -92,8 +155,7 @@ tlacitko.addEventListener("click",function(){
         rolls.currentTime = 0
         kontrolaVyhry()
     }, (4.5 + (Math.random()*1.5))*1000);
-});
-
+}
 // Math.ceil(Math.random()*7) 
 function rollone() {
     k1 = Math.ceil(Math.random()*7)
@@ -106,7 +168,7 @@ function rolltwo() {
 }
 
 function rollthree() {
-    k3 = Math.ceil(Math.random()*7)
+    k3 = Math.ceil(Math.random()*6.8)
     obr3.src = `./kostky/kostka${k3}.png`;
 }
 
