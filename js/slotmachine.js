@@ -159,17 +159,17 @@ function startroll() {
 }
 // Math.ceil(Math.random()*7) 
 function rollone() {
-    k1 = Math.ceil(Math.random()*7)
+    k1 = Math.ceil(Math.random()*6.5)
     obr1.src = `./kostky/kostka${k1}.png`;
 }
 
 function rolltwo() {
-    k2 = Math.ceil(Math.random()*7)
+    k2 = Math.ceil(Math.random()*6.5)
     obr2.src = `./kostky/kostka${k2}.png`;
 }
 
 function rollthree() {
-    k3 = Math.ceil(Math.random()*6.8)
+    k3 = Math.ceil(Math.random()*6.5)
     obr3.src = `./kostky/kostka${k3}.png`;
 }
 
