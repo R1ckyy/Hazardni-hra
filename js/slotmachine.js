@@ -5,6 +5,7 @@ let gcoins = 30;
 let pokusy = 0;
 let mvyhry = 0;
 let vvyhry = 0;
+let sance = 6.2;
 //VAROVÁNÍ !! SPAGHETTI CODE !! VAROVÁNÍ
 
 //-------------AUDIO-----------
@@ -118,6 +119,8 @@ function startroll() {
         obr2.classList.remove('rainbow');
         obr3.classList.remove('rainbow');
     }
+    if(pokusy == 50) sance = 6.5;
+    if(pokusy == 100) sance = 7;
     gcoins--;
     pokusy++;
     refreshstats()
@@ -159,17 +162,17 @@ function startroll() {
 }
 // Math.ceil(Math.random()*7) 
 function rollone() {
-    k1 = Math.ceil(Math.random()*6.5)
+    k1 = Math.ceil(Math.random()*sance)
     obr1.src = `./kostky/kostka${k1}.png`;
 }
 
 function rolltwo() {
-    k2 = Math.ceil(Math.random()*6.5)
+    k2 = Math.ceil(Math.random()*sance)
     obr2.src = `./kostky/kostka${k2}.png`;
 }
 
 function rollthree() {
-    k3 = Math.ceil(Math.random()*6.5)
+    k3 = Math.ceil(Math.random()*sance)
     obr3.src = `./kostky/kostka${k3}.png`;
 }
 
